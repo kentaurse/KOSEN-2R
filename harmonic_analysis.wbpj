@@ -1,0 +1,12 @@
+// 周波数応答解析設定
+1. Frequency Range:
+   - Range 1: 43-53 Hz (細分化)
+   - Range 2: 53-57 Hz (細分化)
+   - Step Size: 0.5 Hz
+
+2. Loading:
+   - Base Excitation: 1g
+   - Direction: All axes
+
+3. Damping:
+   - Modal Damping: 2% 

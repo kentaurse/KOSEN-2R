@@ -1,0 +1,50 @@
+// Harmonic Response Settings
+Analysis Settings {
+    Analysis Type: Harmonic Response
+    Solution Method: Full
+    
+    Frequency Range {
+        Start: 40 Hz
+        End: 60 Hz
+        Solution Intervals: 200
+        Clustering: Around Resonance
+    }
+    
+    Damping Settings {
+        Type: Constant Damping Ratio
+        Value: 0.02 // 2% damping
+    }
+}
+
+// Excitation Settings
+Base Excitation {
+    Type: Acceleration
+    Magnitude: 1g
+    Directions: All axes
+    Phase: 0°
+    
+    Critical Ranges {
+        Range1: 43-53 Hz {
+            Additional Points: 50
+        }
+        Range2: 53-57 Hz {
+            Additional Points: 40
+        }
+    }
+}
+
+// Response Monitoring
+Output Locations {
+    Critical Components {
+        PCB Locations
+        Sensor Mounts
+        Structure Extremities
+    }
+    
+    Output Variables {
+        Displacement
+        Velocity
+        Acceleration
+        Stress
+    }
+} 

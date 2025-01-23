@@ -1,0 +1,9 @@
+// メッシュ設定
+1. Element Size: 2mm (基本サイズ)
+2. Refinement:
+   - 応力集中予想部: 1mm
+   - 接触部周辺: 1.5mm
+3. Quality Metrics:
+   - Aspect Ratio < 10
+   - Skewness < 0.8
+   - Orthogonal Quality > 0.15 

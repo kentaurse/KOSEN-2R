@@ -1,0 +1,10 @@
+// 静的解析設定
+1. Boundary Conditions:
+   - Fixed Support: 衛星取付部
+   - Standard Earth Gravity
+   - Preload: ボルト締結部
+
+2. Analysis Settings:
+   - Large Deflection: On
+   - Solver Type: Direct
+   - Max Iterations: 100 

@@ -1,0 +1,33 @@
+// Analysis Settings
+Analysis Type: Static Structural
+Settings {
+    Large Deflection: On
+    Solver Type: Direct
+    Weak Springs: Off
+    Maximum Iterations: 100
+    Convergence Criteria {
+        Force: 0.1%
+        Displacement: 0.1%
+    }
+}
+
+// Boundary Conditions
+Constraints {
+    Fixed Support {
+        Location: Satellite Mount Interface
+        Type: Fixed (All DOF)
+    }
+    
+    Bolt Preload {
+        Location: All Bolt Connections
+        Preload Force: 1000N
+        Define By: Load
+    }
+}
+
+// Loading Conditions
+Loads {
+    Gravity: 9.81 m/s²
+    Direction: Global Y
+    Acceleration Load: 15g // Launch condition
+} 

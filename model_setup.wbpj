@@ -1,0 +1,16 @@
+import matplotlib.pyplot as plt
+import seaborn as sns
+import json
+
+class PlotGenerator:
+    def __init__(self, config_path='config/analysis_parameters.json'):
+        with open(config_path) as f:
+            self.config = json.load(f)
+        plt.style.use('seaborn')
+    
+    def plot_frequency_response(self, data):
+        """周波数応答プロットの生成"""
+        plt.figure(figsize=(12, 8))
+        self._create_response_plot(data)
+        self._add_critical_bands()
+        return plt.gcf()

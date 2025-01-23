@@ -1,0 +1,28 @@
+// Global Mesh Settings
+Element Settings {
+    Element Type: SOLID187 // 10-node tetrahedral element
+    Element Size: 2mm
+    Growth Rate: 1.2
+    Transition: Slow
+}
+
+// Local Mesh Refinement
+Refinement Regions {
+    Contact Areas {
+        Element Size: 1mm
+        Sphere of Influence: 5mm
+    }
+    
+    Stress Concentration Areas {
+        Element Size: 0.8mm
+        Sphere of Influence: 3mm
+    }
+}
+
+// Mesh Quality Criteria
+Quality Metrics {
+    Aspect Ratio: Maximum 10
+    Skewness: Maximum 0.8
+    Orthogonal Quality: Minimum 0.15
+    Jacobian Ratio: Maximum 30
+} 

@@ -1,0 +1,35 @@
+// Modal Analysis Settings
+Analysis Settings {
+    Analysis Type: Modal
+    Maximum Modes to Find: 20
+    Frequency Range: 0-1000 Hz
+    Solver: Block Lanczos
+    
+    Mode Extraction Method {
+        Type: Block Lanczos
+        Maximum Iterations: 30
+        Convergence Tolerance: 1.0E-4
+    }
+}
+
+// Output Controls
+Results {
+    Store Mode Shapes: Yes
+    Calculate Mode Participation: Yes
+    Modal Analysis Data {
+        Displacement
+        Velocity
+        Acceleration
+        Strain Energy
+    }
+}
+
+// Frequency Ranges of Interest
+Specific Ranges {
+    Range1: 43-53 Hz {
+        Resolution: 0.1 Hz
+    }
+    Range2: 53-57 Hz {
+        Resolution: 0.1 Hz
+    }
+} 

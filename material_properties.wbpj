@@ -1,0 +1,18 @@
+// Engineering Data
+Material: Aluminum 6061-T6 (主構造材)
+Properties {
+    Density: 2700 kg/m³
+    Young's Modulus: 68.9 GPa
+    Poisson's Ratio: 0.33
+    Tensile Yield Strength: 276 MPa
+    Ultimate Tensile Strength: 310 MPa
+}
+
+Material: Printed Circuit Board (FR-4)
+Properties {
+    Density: 1850 kg/m³
+    Young's Modulus: 22 GPa
+    Poisson's Ratio: 0.28
+}
+
+// 他の使用材料も同様に定義 
